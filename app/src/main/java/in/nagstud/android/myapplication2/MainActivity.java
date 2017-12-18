@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         listView3 = (ListView) findViewById(R.id.listView3);
         semList = new ArrayList<Integer>();
         //intializing the listview and the years list
-        listView3 = (ListView) findViewById(R.id.listView3);
-        semList = new ArrayList<Integer>();
+        listView4 = (ListView) findViewById(R.id.listView3);
+        yearsList = new ArrayList<>();
         //this method will fetch and parse the data
         loadHeroList();
     }
@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
                             //so here we are getting that json array
                             JSONArray yearArray = obj.getJSONArray("qpaper");
                             //now looping through all the elements of the json array
-                            //yearsList.clear();
+                           // yearsList.clear();
                             for (int i = 0; i < yearArray.length(); i++) {
                                 //getting the json object of the particular index inside the array
                                 JSONObject yearObject = yearArray.getJSONObject(i);
